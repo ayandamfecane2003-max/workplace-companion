@@ -1,8 +1,8 @@
-.AI Workplace Productivity Assistant
+.AI Workplace companion
 
 Project Overview
 
-AI Workplace Productivity Assistant is a modern, responsive, frontend-only SaaS web application designed to help professionals improve workplace productivity with AI-powered tools.
+AI Workplace companion is a modern, responsive, frontend-only SaaS web application designed to help professionals improve workplace productivity with AI-powered tools.
 
 The application provides a simple dashboard where users can generate professional emails, organise tasks into daily or weekly plans, and research or summarise information.
 
