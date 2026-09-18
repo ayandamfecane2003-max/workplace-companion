@@ -945,6 +945,18 @@ function ActionButtons({
   };
   return (
     <div className="flex items-center gap-1">
+      <Button
+        variant="ghost"
+        size="sm"
+        onClick={() =>
+          document
+            .querySelector<HTMLElement>('textarea[aria-label^="Editable"]')
+            ?.focus()
+        }
+      >
+        <PencilLine />
+        Edit
+      </Button>
       <Button variant="ghost" size="sm" onClick={copy}>
         {copied ? <CheckCircle2 /> : <Copy />}
         {copied ? "Copied" : "Copy"}
