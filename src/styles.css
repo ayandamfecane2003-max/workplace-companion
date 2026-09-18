@@ -99,11 +99,28 @@
 }
 
 @layer base {
-  * { border-color: var(--color-border); }
-  html { scroll-behavior: smooth; }
-  body { background-color: var(--color-background); color: var(--color-foreground); font-family: var(--font-sans); letter-spacing: 0; }
-  button, input, textarea, select { letter-spacing: 0; }
-  ::selection { background: var(--color-primary-soft); color: var(--color-primary); }
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    letter-spacing: 0;
+  }
+  button,
+  input,
+  textarea,
+  select {
+    letter-spacing: 0;
+  }
+  ::selection {
+    background: var(--color-primary-soft);
+    color: var(--color-primary);
+  }
 }
 
 @utility tool-panel {
@@ -112,7 +129,9 @@
   background: var(--color-card);
   padding: 1.25rem;
   box-shadow: var(--shadow-card);
-  @media (min-width: 768px) { padding: 1.5rem; }
+  @media (min-width: 768px) {
+    padding: 1.5rem;
+  }
 }
 
 @utility panel-heading {
@@ -122,8 +141,15 @@
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--color-border);
-  & h2 { font-size: 0.875rem; font-weight: 650; }
-  & p { margin-top: 0.2rem; font-size: 0.75rem; color: var(--color-muted-foreground); }
+  & h2 {
+    font-size: 0.875rem;
+    font-weight: 650;
+  }
+  & p {
+    margin-top: 0.2rem;
+    font-size: 0.75rem;
+    color: var(--color-muted-foreground);
+  }
 }
 
 @utility step-number {
@@ -158,9 +184,18 @@
   padding: 0 0.75rem;
   font-size: 0.875rem;
   outline: none;
-  &:focus { box-shadow: 0 0 0 1px var(--color-ring); }
+  &:focus {
+    box-shadow: 0 0 0 1px var(--color-ring);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
