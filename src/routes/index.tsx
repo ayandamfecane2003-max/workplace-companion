@@ -949,9 +949,7 @@ function ActionButtons({
         variant="ghost"
         size="sm"
         onClick={() =>
-          document
-            .querySelector<HTMLElement>('textarea[aria-label^="Editable"]')
-            ?.focus()
+          document.querySelector<HTMLElement>('textarea[aria-label^="Editable"]')?.focus()
         }
       >
         <PencilLine />
