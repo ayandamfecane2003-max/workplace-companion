@@ -1,54 +1,60 @@
-# Workplace Companion
+.AI Workplace Productivity Assistant
 
-Build a modern, responsive AI Workplace Productivity Assistant — a frontend-only SaaS web application for professionals. No backend, database, authentication, API integrations, or data storage. All AI outputs should be simulated/mock interactions on the frontend.
+Project Overview
 
-Design
+AI Workplace Productivity Assistant is a modern, responsive, frontend-only SaaS web application designed to help professionals improve workplace productivity with AI-powered tools.
 
-Clean, modern, professional SaaS dashboard
+The application provides a simple dashboard where users can generate professional emails, organise tasks into daily or weekly plans, and research or summarise information.
 
-Primary colours: burgundy red and black, with white/light neutral backgrounds for readability
+This project is intentionally designed without a backend, database, authentication, or persistent data storage. AI functionality is represented through frontend/mock responses for demonstration purposes.
 
-Responsive on desktop, tablet, and mobile
-
-Left sidebar navigation with icons
-
-Modern cards, buttons, forms, tabs, and editable text areas
-
-Professional typography and subtle hover/focus states
-
-Main Features
+Features Implemented
 
 1. Smart Email Generator
 
-Input: recipient/context, subject, key points
+Generate professional workplace emails.
 
-Tone selector: Formal, Friendly, Persuasive
+Supports multiple writing tones:
 
-Generate a professional email
+Formal
 
-Display output in an editable text area
+Friendly
 
-Actions: Copy, Edit, Clear
+Persuasive
+
+Accepts context, subject, and key points.
+
+AI-generated output is editable.
+
+Copy and clear actions are provided.
 
 2. AI Task Planner
 
-Input tasks, deadlines, priorities, and available working hours
+Create daily or weekly work schedules.
 
-Options: Daily Plan / Weekly Plan
+Add tasks, deadlines, priorities, and available working hours.
 
-Generate a structured schedule
+Prioritise tasks as:
 
-Prioritise tasks using High, Medium, and Low priority
+High
 
-Display the plan in editable cards or a timeline
+Medium
 
-Actions: Edit, Copy, Clear
+Low
+
+Displays generated schedules in an organised, editable format.
+
+Includes copy, edit, and clear functionality.
 
 3. AI Research Assistant
 
-Input a research topic, pasted article/text, or URL
+Research a topic using a simple prompt.
 
-Generate:
+Paste article or text content for summarisation.
+
+Enter a URL for the research workflow.
+
+Provides:
 
 Summary
 
@@ -56,66 +62,133 @@ Key insights
 
 Recommendations
 
-Use a clean tabbed or card-based results layout
+Generated results are editable.
 
-Make all generated content editable
+Copy and clear actions are available.
 
-Include Copy and Clear actions
+URL processing is frontend-only and does not use a backend scraper or external API.
 
-For URL input, provide a clear frontend-only experience; do not create a backend scraper or external API.
+4. Modern Dashboard
 
-Dashboard
+SaaS-style dashboard interface.
 
-Create a simple home dashboard showing:
+Sidebar navigation.
 
-Welcome message
+Quick access to all three AI tools.
 
-Three feature cards: Email Generator, Task Planner, Research Assistant
+Responsive design for desktop, tablet, and mobile.
 
-Quick-action buttons
+Clean cards, forms, buttons, and editable output areas.
 
-Recent activity should be temporary frontend/mock data only, not persisted
+Temporary mock activity data only; information is not persisted.
 
-Responsible AI
+5. Responsible AI
 
-Include a visible disclaimer:
-“AI-generated content may contain errors or omissions. Review and verify important information before using it. Do not enter confidential or sensitive workplace information.”
+The application includes a responsible AI disclaimer:
 
-Important Constraints
+AI-generated content may contain errors or omissions. Review and verify important information before using it. Do not enter confidential or sensitive workplace information.
 
-Frontend-only application
+Technologies and Tools Used
 
-Do not store user data
+Lovable — Application development and frontend generation.
 
-No database or backend
+React — User interface development.
 
-No authentication/login system
+TypeScript — Type-safe application logic.
 
-No external API requirements
+Vite — Frontend development and build tooling.
 
-Use realistic mock AI responses to demonstrate the experience
+Tailwind CSS — Responsive styling and UI design.
 
-Keep the interface polished, functional, and easy to navigate
+Lucide Icons — Interface icons.
 
-Prioritise the core three features over additional functionality
+Mock AI Responses — Demonstration of AI-generated outputs without external AI APIs.
 
-This project was built with [Lovable](https://lovable.dev).
+Git/GitHub — Optional source-code version control and project hosting.
 
-## Build with Lovable
+Design System
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/23cbdc3e-10a7-46f1-91bb-991edec2d702).
+The application uses a clean and professional SaaS visual style.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+Primary colour: Burgundy red
 
-## Development
+Secondary colour: Black
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Supporting colours: White and neutral shades
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+Responsive layouts
+
+Modern typography
+
+Subtle hover and focus states
+
+Accessible and easy-to-use forms
+
+Professional dashboard components
+
+Setup Instructions
+
+Prerequisites
+
+Ensure you have the following installed:
+
+Node.js
+
+npm
+
+Git (optional)
+
+1. Clone the Project
+
+git clone <repository-url>
+cd <project-folder>
+
+If the project was exported from Lovable, download/export the project files first and open the project directory in your terminal.
+
+2. Install Dependencies
+
+npm install
+
+3. Start the Development Server
+
 npm run dev
-```
+
+The terminal will provide a local development URL, typically similar to:
+
+http://localhost:5173
+
+Open the provided URL in a web browser.
+
+4. Create a Production Build
+
+npm run build
+
+5. Preview the Production Build
+
+npm run preview
+
+Data and Backend
+
+This version of the application does not include:
+
+Backend services
+
+Database
+
+Authentication
+
+User accounts
+
+Persistent storage
+
+External AI API integrations
+
+Server-side URL scraping
+
+Generated content and activity are intended for temporary frontend demonstration only.
+
+Project Goal
+
+The goal of this project is to demonstrate a professional AI productivity SaaS experience while keeping the application lightweight, simple, and frontend-only.
+
+Future versions could integrate real AI APIs, authentication, secure data storage, saved productivity plans, research history, document processing, and team collaboration.
