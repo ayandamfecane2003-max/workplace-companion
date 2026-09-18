@@ -16,6 +16,15 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        sidebarGhost:
+          "text-sidebar-muted hover:bg-sidebar-accent hover:text-sidebar-foreground shadow-none",
+        sidebarActive:
+          "bg-sidebar-accent text-sidebar-foreground shadow-none before:h-4 before:w-0.5 before:rounded-full before:bg-sidebar-primary",
+        choice:
+          "border border-input bg-background text-muted-foreground shadow-none hover:border-primary/40 hover:text-foreground",
+        choiceActive:
+          "border border-primary/25 bg-primary-soft text-primary shadow-none hover:bg-primary-soft",
+        row: "bg-transparent text-foreground shadow-none hover:bg-surface-soft",
       },
       size: {
         default: "h-9 px-4 py-2",
